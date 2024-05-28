@@ -78,9 +78,8 @@ function Calculator(){
         setOperator(null);
     };
     return(
-            <body>
                 <div className="calculator-container">
-                    <div className="display" id="display">{displayValue}</div>
+                    <div className="display" id="display" data-testid="display">{displayValue}</div>
                     <div className="calculator-grid">
                         <button className="grid-item" onClick={() => handleNumberClick("1")}>1</button>
                         <button className="grid-item" onClick={() => handleNumberClick("2")}>2</button>
@@ -101,7 +100,6 @@ function Calculator(){
                     </div>
                     <p>Display: {displayValue}</p>
                 </div>
-            </body>
         
     )
 }
